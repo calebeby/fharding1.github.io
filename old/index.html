@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The personal website of Franklin Harding" />
+    <meta name="keywords" content="Franklin Harding, JavaScript, CSS, Linux, System Administration, Portland, Oregon" />
+    <meta name="robots" content="index,follow" />
+    <meta name="google-site-verification" content="8JFb8Gsof60LlvqbBg65E1bbFqLI3e6U6ZJzC1xeLW4" />
+    <title>Franklin Harding</title>
+
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <link rel="canonical" href="https://franklinharding.com/" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='css/reset.css' />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Thanks for reading my code -->
+</head>
+
+<body ng-app="scrollApp" ng-controller="scrollController">
+    <div id="header">
+        <div id="headerMe">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <div id="me">
+                <h1>Franklin Harding</h1>
+                <h2>Web Dev</h2>
+            </div>
+        </div>
+        <ul id="nav">
+            <li id="aboutNav" ng-click="gotoElem('top')">About</li>
+            <li id="workNav" ng-click="gotoElem('work')">Work</li>
+            <li id="inquiryNav" ng-click="gotoElem('inquiry')">Inquiries</li>
+        </ul>
+    </div>
+    <div id="padding"></div>
+    <div id="content">
+        <img id="selfie" src="media/selfie.jpg" alt="A picture of me, Franklin Harding.">
+        <div id="about">
+            <h2>I'm a student at Cleveland High School in Portland, OR and an aspiring Web Developer. In my spare time I love to work on projects in Go, Java, and JavaScript. Go is my favorite language to work in, for everything from making a RESTful API, to
+                experimenting with AES encryption and padding. Linux is my Operating System of choice, and I am currently running Fedora Linux 25 with the i3 window manager. When I'm not programming you can probably catch me watching Numberphile on YouTube,
+                or studying.</h2>
+        </div>
+        <div id="work">
+            <div class="workItem left">
+                <img src="media/gopass.png" alt="Go Pass Gitlab Screenshot">
+                <div class="workText">
+                    <h1><a href="https://gitlab.com/fharding/gopass">GoPass (under dev)</a></h1>
+                    <p>GoPass is a client-server password manager that anyone can run, and while it is in development, it works pretty good so far (with limited features), and is fairly secure. By leveraging AES encryption, and encrypting client-side before
+                        sending it to the server, it's very hard for the plain text passwords to be stolen or decrypted by anybody besides someone with the key. Also, because it has a Go backend, and a PostgreSQL database the daemon should be fairly quick
+                        and be able to handle a decently sized infrastructure, especially after the code is cleaned up and optimized a bit.</p>
+                </div>
+            </div>
+            <div class="workItem left">
+                <div class="workText">
+                    <h1><a href="https://gitlab.com/fharding/">Various RESTful webapps in Go</a></h1>
+                    <p>I've written many RESTful webapps in Go, and I love it. Go allows you to forget callback hell, and the POS known as NPM, and just use the stdlib to devlop very, very fast and maintainable RESTful (or not RESTful) apis/sites. Resource-cheap
+                        goroutines allow you to forget all that callback nonsense and write FAST easy to understand code.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem right">
+                <img src="media/servers.jpg" alt="DL380 G6 and G7.">
+                <div class="workText">
+                    <h1>My Two Servers</h1>
+                    <p>These servers are both an ongoing project and a utility. One is a DL380 G6, and the other is a G7. Combined they make up 32 threads and 96GB of RAM, fairly decent specifications. Currently I run a seedbox, minecraft server, RSYNC server
+                        (if you call that a server), and countless assorted little applications that I want to share with the world.</p>
+                </div>
+            </div>
+            <div class="workItem left">
+                <img src="media/thissite.png" alt="This website.">
+                <div class="workText">
+                    <h1>This Website</h1>
+                    <p>&lt;meta&gt;This website has been through countless revisions, I've redesigned it at a dozen times, probably much more. It's evolved from very awful to slightly less awful, and it will keep improving over time, as will I. I attempt
+                        to make it look nice, even if I'm not the best at it :P&lt;/meta&gt;</p>
+                </div>
+            </div>
+            <div class="workItem right">
+                <img src="media/wforecast.png" alt="wforecast.pw">
+                <div class="workText">
+                    <h1>wforecast - Vue.js, Lets Encrypt &amp; Nginx Reverse Proxies</h1>
+                    <p>When I was learning Vue.js I decided it would be good to make a realistic, nice first project, so I decided to make the ever so cliche weather application. <a href="https://wforecast.pw">wforecast.pw</a> is a fully functional weather
+                        application that will find where you are and get your current weather as well as the next couple days. In doing this project I learned a lot about Nginx and Nginx reverse proxies, as well as Lets Encrypt, and of course, Vue.js.</p>
+                </div>
+            </div>
+        </div>
+        <div id="inquiry">
+            <div id="icons">
+                <a href="//gitlab.com/fharding" target="_blank"><i class="fa fa-gitlab fa-4x" aria-hidden="true"></i></a>
+                <a href="//codepen.io/fharding/" target="_blank"><i class="fa fa-codepen fa-4x" aria-hidden="true"></i></a>
+                <a href="//www.freecodecamp.com/franke123" target="_blank"><i class="fa fa-free-code-camp fa-4x" aria-hidden="true"></i></a>
+                <a href="//www.linkedin.com/in/frank-harding-30a36a9b" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                <a href="mailto:franklinharding0.0@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
+                <a href="//medium.com/@fharding" target="_blank"><i class="fa fa-medium fa-4x" aria-hidden="true"></i></a>
+            </div>
+            <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0xB2CBB397558EFD4D">PGP Key</a>
+        </div>
+        <div id="scrollHelper"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
+    </div>
+</body>
+
+</html>

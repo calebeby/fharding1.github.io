@@ -1,0 +1,24 @@
+body {
+  padding: 2em 3em;
+  font-size: 1.2em;
+  font-family: monospace;
+  max-width: 640px;
+  line-height: 1.2;
+  color: #111;
+  background: #EEE;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+}
+
+#name {
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+#contact {
+  margin: 1em 0;
+  font-size: 0.8em;
+}
