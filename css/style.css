@@ -1,12 +1,11 @@
 body {
   padding: 2em 3em;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  max-width: 720px;
   font-family: monospace;
-  max-width: 640px;
   line-height: 1.2;
   color: #111;
-  background: #EEE;
-  
+  background: #EEE; 
 }
 
 #header {
@@ -20,13 +19,21 @@ body {
 }
 
 #contact {
-  margin: 1em 0;
-  font-size: 0.8em;
+	display: flex;
+}
+
+#contact img {
+	width: 2rem;
+	margin: 0.5em 1em 0 0;
 }
 
 @media only screen and (min-width: 1921px) {
 	body {
 		font-size: 3.5em;
-		max-width: none;
+		max-width: 60%;
+	}
+
+	#contact img {
+		width: 3.5rem;
 	}
 }
