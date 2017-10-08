@@ -18,8 +18,8 @@ body {
   margin-right: 1em;
 }
 
-#contact {
-	display: flex;
+#contact li {
+	display: inline;
 }
 
 #contact img {
@@ -29,11 +29,21 @@ body {
 
 @media only screen and (min-width: 1921px) {
 	body {
-		font-size: 3.5em;
+		font-size: 2em;
 		max-width: 60%;
 	}
 
 	#contact img {
-		width: 3.5rem;
+		width: 2rem;
+	}
+}
+
+@media only screen and (min-width: 2561px) {
+	body {
+		font-size: 4em;
+	}
+
+	#contact img {
+		width: 4rem;
 	}
 }
