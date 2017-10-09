@@ -18,8 +18,9 @@ body {
   margin-right: 1em;
 }
 
-#contact li {
-	display: inline;
+#contact {
+	display: flex;
+	flex-direction: row;
 }
 
 #contact img {
