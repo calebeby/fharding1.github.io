@@ -3,13 +3,30 @@ body {
   font-family: "monospace", sans-serif;
   background: #eee;
   color: #111;
+  margin: 0;
+  padding: 2em;
+}
+
+h1,
+p,
+img,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 0.1em;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
 }
 
 #header {
-  font-size: 2em;
+  font-size: 1em;
   border-bottom: thick solid black;
-  padding-bottom: 0.2em;
-  margin-bottom: 0.2em;
 }
 
 #main {
