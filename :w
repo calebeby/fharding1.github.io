@@ -1,7 +1,7 @@
 body {
   padding: 2em 3em;
   font-family: "Lato", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 2rem;
   background: #eee;
   color: #111;
   margin: 0;
