@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "html-minifier": "^3.5.18"
+  },
+  "scripts": {
+    "build": "mkdir -p dist; cp src/* dist; html-minifier dist/index.html --collapse-whitespace --minify-css -o dist/index.html"
+  }
+}
